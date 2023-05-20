@@ -10,7 +10,7 @@ import { Layout } from 'components/Layout/Layout';
 import { PageProps } from 'utils/sharedTypes';
 import { ThemeProvider } from '@material-tailwind/react';
 
-export default function MyApp({ Component, pageProps }: AppProps) {
+export default function MyApp({ Component, pageProps }: { Component: any; pageProps: any }) {
   const router = useRouter();
   const canvasAppRef = useRef<HTMLDivElement | null>(null);
   const [isReady, setIsReady] = useState(false);
@@ -40,14 +40,15 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       <ThemeProvider>
         <GlobalStyles />
         <Layout repoHref={(pageProps as PageProps).repoHref} isReady={isReady}>
-          <>
+          <div>
             <div ref={canvasAppRef} className="canvas__wrapper" />
+
             <Component
               key={`${router.route}${router.locale === undefined ? '' : router.locale}`}
               router={router}
               {...pageProps}
             />
-          </>
+          </div>
         </Layout>
       </ThemeProvider>
     </>
