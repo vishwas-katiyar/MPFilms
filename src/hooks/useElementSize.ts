@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import debounce from 'lodash.debounce';
-
-import { DomRectSSR } from 'utils/sharedTypes';
+import { DomRectSSR } from '../utils/sharedTypes';
 
 type ElRef = React.RefObject<HTMLDivElement>;
 

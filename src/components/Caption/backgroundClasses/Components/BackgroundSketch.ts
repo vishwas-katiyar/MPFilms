@@ -1,4 +1,7 @@
-import { Bounds, UpdateInfo } from 'utils/sharedTypes';
+// import { Bounds, UpdateInfo } from "../../../../utils/sharedTypes";
+
+
+import { Bounds, UpdateInfo } from "../../../../utils/sharedTypes";
 
 interface Constructor {
   ctx: CanvasRenderingContext2D | null;

@@ -1,9 +1,12 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import { sharedValues } from '../../../utils/sharedValues';
+import { s1, underline } from '../../../utils/sharedStyled';
+import { media } from '../../../utils/media';
 
-import { underline, s1 } from 'utils/sharedStyled';
-import { media } from 'utils/media';
-import { sharedValues } from 'utils/sharedValues';
+// import { underline, s1 } from 'utils/sharedStyled';
+// import { media } from 'utils/media';
+// import { sharedValues } from 'utils/sharedValues';
 
 export const ScrollContainer = styled.div`
   position: absolute;

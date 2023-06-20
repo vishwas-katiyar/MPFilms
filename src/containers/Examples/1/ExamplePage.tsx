@@ -1,11 +1,10 @@
 import React, { useRef } from 'react';
 
-import { Head } from 'seo/Head/Head';
-import { GameTile } from 'components/GameTile/GameTile';
-import { LinkHandler } from 'components/LinkHandler/LinkHandler';
+// import { GameTile } from 'components/GameTile/GameTile';
 
 import * as S from './ExamplePage.styles';
 import { GameAsset, LogoAsset } from './ExamplePage.data';
+import { GameTile } from '../../../components/GameTile/GameTile';
 
 interface Props {
   gameAssets: GameAsset[];

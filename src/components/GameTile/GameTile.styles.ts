@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
+import { media } from '../../utils/media';
 
-import { media } from 'utils/media';
+// import { media } from 'utils/media';
 
 export const ImageWrapper = styled.div`
   width: 100%;

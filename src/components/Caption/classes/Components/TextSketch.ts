@@ -1,6 +1,7 @@
 import { gsap } from 'gsap';
 
-import { Bounds, UpdateInfo } from 'utils/sharedTypes';
+import { Bounds, UpdateInfo } from "../../../../utils/sharedTypes";
+
 
 import { App } from '../App';
 

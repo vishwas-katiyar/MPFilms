@@ -1,11 +1,10 @@
 import React, { useCallback, useMemo, useRef } from 'react';
 import { ScrollParallax } from 'react-just-parallax';
 
-import { PreloadImage } from 'components/PreloadImage/PreloadImage';
-import { seedRandom } from 'utils/functions/seedRandom';
-
+import { PreloadImage } from '../../components/PreloadImage/PreloadImage';
 import * as S from './GameTile.styles';
-import { LogoAsset } from 'containers/Examples/1/ExamplePage.data';
+import { seedRandom } from '../../utils/functions/seedRandom';
+import { LogoAsset } from '../../containers/Examples/1/ExamplePage.data';
 
 interface Props {
   imageSrc: string;
