@@ -1,14 +1,16 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { MotionValue, useTransform, motion } from 'framer-motion';
 
-import { useWindowSize } from 'hooks/useWindowSize';
-import { ShowOff } from 'sections/ShowOff/ShowOff';
+// import { useWindowSize } from 'hooks/useWindowSize';
+// import { ShowOff } from 'sections/ShowOff/ShowOff';
 
 import { appState } from './Caption.state';
 import { App } from './classes/App';
 import * as Background from './backgroundClasses/App';
 import * as CoverBackground from './coverBackgroundClasses/App';
 import * as S from './Caption.styles';
+import { useWindowSize } from '../../hooks/useWindowSize';
+import { ShowOff } from '../../sections/ShowOff/ShowOff';
 
 interface Props {
   scrollRatio: MotionValue<any>;

@@ -1,7 +1,9 @@
 import styled from 'styled-components';
+import { media } from '../../utils/media';
+import { s1, underline } from '../../utils/sharedStyled';
 
-import { media } from 'utils/media';
-import { underline, s1 } from 'utils/sharedStyled';
+// import { media } from 'utils/media';
+// import { underline, s1 } from 'utils/sharedStyled';
 
 export const ScrollContainer = styled.div`
   position: absolute;

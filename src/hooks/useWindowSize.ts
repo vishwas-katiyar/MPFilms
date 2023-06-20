@@ -1,7 +1,8 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import debounce from 'lodash.debounce';
+import { getScrollbarWidth } from '../utils/functions/getScrollbarWidth';
 
-import { getScrollbarWidth } from 'utils/functions/getScrollbarWidth';
+// import { getScrollbarWidth } from 'utils/functions/getScrollbarWidth';
 
 interface WindowSize {
   windowWidth: number;

@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
 
-import { CopyInfo } from 'sections/CopyInfo/CopyInfo';
+// import { CopyInfo } from 'sections/CopyInfo/CopyInfo';
 
 import * as S from './Layout.styles';
+import { CopyInfo } from '../../sections/CopyInfo/CopyInfo';
 
 interface Props {
   isReady: boolean;

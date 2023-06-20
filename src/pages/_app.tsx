@@ -5,9 +5,9 @@ import FontFaceObserver from 'fontfaceobserver';
 import 'focus-visible';
 import '../styles/index.scss';
 
-import { GlobalStyles } from 'utils/GlobalStyles';
-import { Layout } from 'components/Layout/Layout';
-import { PageProps } from 'utils/sharedTypes';
+import { GlobalStyles } from '../utils/GlobalStyles';
+import { Layout } from '../components/Layout/Layout';
+import { PageProps } from '../utils/sharedTypes';
 import { ThemeProvider } from '@material-tailwind/react';
 
 export default function MyApp({ Component, pageProps }: { Component: any; pageProps: any }) {

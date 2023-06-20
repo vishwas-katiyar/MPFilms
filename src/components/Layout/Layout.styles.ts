@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
+import { sharedValues } from '../../utils/sharedValues';
 
-import { sharedValues } from 'utils/sharedValues';
+// import { sharedValues } from '../';
 
 interface ReadyWrapperProps {
   isReady: boolean;

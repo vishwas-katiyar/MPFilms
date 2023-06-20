@@ -1,7 +1,7 @@
 import React from 'react';
 import { MouseParallax } from 'react-just-parallax';
 
-import { PreloadImage } from 'components/PreloadImage/PreloadImage';
+// import { PreloadImage } from 'components/PreloadImage/PreloadImage';
 
 import frameSrc from './images/frame.svg';
 import shape1Src from './images/shape1.svg';
@@ -14,6 +14,7 @@ import shape7Src from './images/shape7.svg';
 import shape8Src from './images/shape8.svg';
 import shape9Src from './images/shape9.svg';
 import * as S from './ShowOff.styles';
+import { PreloadImage } from '../../components/PreloadImage/PreloadImage';
 
 interface Props {
   scrollContainer: React.MutableRefObject<HTMLDivElement | null>;

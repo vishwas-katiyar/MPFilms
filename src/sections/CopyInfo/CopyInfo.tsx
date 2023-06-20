@@ -1,11 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
 
-import { PreloadImage } from 'components/PreloadImage/PreloadImage';
-import { LinkHandler } from 'components/LinkHandler/LinkHandler';
+// import { PreloadImage } from 'components/PreloadImage/PreloadImage';
+// import { LinkHandler } from 'components/LinkHandler/LinkHandler';
 
 import * as S from './CopyInfo.styles';
 import logoSrc from './images/logo.svg';
+import { PreloadImage } from '../../components/PreloadImage/PreloadImage';
+import { LinkHandler } from '../../components/LinkHandler/LinkHandler';
 
 interface Props {
   repoHref?: string;

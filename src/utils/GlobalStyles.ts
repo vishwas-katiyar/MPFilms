@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
+import { media } from './media';
 
-import { media } from 'utils/media';
+// import { media } from 'utils/media';
 
 export const GlobalStyles = createGlobalStyle`
   html {

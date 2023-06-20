@@ -1,7 +1,8 @@
 import React from 'react';
 import type { NextApiResponse } from 'next';
+import ErrorPage from '../containers/ErrorPage/ErrorPage';
 
-import ErrorPage from 'containers/ErrorPage/ErrorPage';
+// import ErrorPage from 'containers/ErrorPage/ErrorPage';
 
 interface ErrorProps {
   res?: NextApiResponse;

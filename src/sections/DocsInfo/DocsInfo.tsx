@@ -1,12 +1,18 @@
 import React from 'react';
 import { MouseParallax, ScrollParallax } from 'react-just-parallax';
 
-import { LinkHandler } from 'components/LinkHandler/LinkHandler';
-import { CodeRenderer } from 'components/CodeRenderer/CodeRenderer';
-
+import { LinkHandler } from '../../components/LinkHandler/LinkHandler';
+// import { CodeRenderer } from 'components/CodeRenderer/CodeRenderer';
+// import "../../components/cards.css"
 import * as S from './DocsInfo.styles';
-import { Card } from 'components/Cards';
-import ProfileCard from 'components/Profile';
+// import { Card } from 'components/Cards';
+// import ProfileCard from 'components/Profile';
+import { CodeRenderer } from '../../components/CodeRenderer/CodeRenderer';
+import ProfileCard from '../../components/Profile';
+import { Card } from '../../components/Cards';
+import { MovieCards } from '../../components/MovieCards';
+import { Footer } from '../../components/Footer';
+// import Footer from '../../components/Footer';
 
 const cardTitle: string[] = [
   'Feature Films',
@@ -58,44 +64,13 @@ export const DocsInfo = (props: Props) => {
           ))}
         </div>
         <ProfileCard />
-        <S.Paragraph>
-          Check all the parameters and props for scroll parallax on{' '}
-          <LinkHandler isExternal elHref="https://www.npmjs.com/package/react-just-parallax">
-            <S.InlineLink>official npm page</S.InlineLink>
-          </LinkHandler>
-        </S.Paragraph>
-        <S.ExampleWrapper $bgColor="#FFB66B">
-          <S.Ring $dim />
-          <ScrollParallax isAbsolutelyPositioned scrollContainerRef={scrollContainerRef}>
-            <S.Ring />
-          </ScrollParallax>
-        </S.ExampleWrapper>
-        <S.Paragraph>Example code:</S.Paragraph>
-        <CodeRenderer codeText={scrollText} />
-
-        <S.SectionSeparator />
-
-        <S.Title>🖱️ Mouse / Touch Parallax</S.Title>
-        <S.Paragraph>
-          {/* <div className="text-white"> */}
-          Check all the parameters and props for mouse parallax on {/* </div> */}
-          {/* <LinkHandler isExternal elHref="https://www.npmjs.com/package/react-just-parallax">
-            <S.InlineLink>official npm page</S.InlineLink>
-          </LinkHandler> */}
-        </S.Paragraph>
-        <S.ExampleWrapper $bgColor="#6d66ff">
-          <S.Ring $dim />
-          <MouseParallax
-            enableOnTouchDevice
-            isAbsolutelyPositioned
-            scrollContainerRef={scrollContainerRef}
-          >
-            <S.Ring />
-          </MouseParallax>
-        </S.ExampleWrapper>
-        <S.Paragraph>Example code:</S.Paragraph>
-        <CodeRenderer codeText={mouseText} />
+        <div className="grid grid-cols-1 gap-11 md:grid-cols-2 lg:grid-cols-3 justify-center">
+          {cardTitle.map((title: string) => (
+            <MovieCards title={title} subTitle="Lorem Ipsum" />
+          ))}
+        </div>
       </S.Container>
+      <Footer/>
     </>
   );
 };

@@ -1,10 +1,12 @@
 import debounce from 'lodash.debounce';
 import { MotionValue } from 'framer-motion';
 
-import { sharedValues } from 'utils/sharedValues';
-import { Bounds } from 'utils/sharedTypes';
+// import { sharedValues } from 'utils/sharedValues';
+// import { Bounds } from 'utils/sharedTypes';
 
 import { BackgroundSketch } from './Components/BackgroundSketch';
+import { Bounds } from '../../../utils/sharedTypes';
+import { sharedValues } from '../../../utils/sharedValues';
 
 interface Constructor {
   rendererEl: HTMLDivElement | null;

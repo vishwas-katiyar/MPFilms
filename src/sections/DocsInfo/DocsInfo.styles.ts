@@ -1,7 +1,9 @@
 import styled, { css } from 'styled-components';
+import { media } from '../../utils/media';
+import { underline } from '../../utils/sharedStyled';
 
-import { media } from 'utils/media';
-import { underline } from 'utils/sharedStyled';
+// import { media } from 'utils/media';
+// import { underline } from 'utils/sharedStyled';
 
 export const Container = styled.div`
   width: 100%;

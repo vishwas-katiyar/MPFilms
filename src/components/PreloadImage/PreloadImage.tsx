@@ -1,8 +1,9 @@
 import React from 'react';
 
-import { useMediaPreload } from 'hooks/useMediaPreload';
+// import { useMediaPreload } from 'hooks/useMediaPreload';
 
 import * as S from './PreloadImage.styles';
+import { useMediaPreload } from '../../hooks/useMediaPreload';
 
 interface Props {
   imageSrc: string;

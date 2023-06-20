@@ -1,22 +1,17 @@
 import React, { useRef } from 'react';
 import { useSpring, useTransform, useScroll } from 'framer-motion';
 
-import { LinkHandler } from 'components/LinkHandler/LinkHandler';
-import { useElementSize } from 'hooks/useElementSize';
-import { DocsInfo } from 'sections/DocsInfo/DocsInfo';
-import { Caption } from 'components/Caption/Caption';
-import { useWindowSize } from 'hooks/useWindowSize';
-import { Head } from 'seo/Head/Head';
+// import { useElementSize } from 'hooks/useElementSize';
+// import { DocsInfo } from 'sections/DocsInfo/DocsInfo';
+// import { Caption } from 'components/Caption/Caption';
+// import { useWindowSize } from 'hooks/useWindowSize';
 
 import * as S from './IndexPage.styles';
-import ExamplePage from 'containers/Examples/1/ExamplePage';
-import {
-  GameAsset,
-  LogoAsset,
-  customGameAssets,
-  customLogoAssets,
-  getStaticProps,
-} from '../Examples/1/ExamplePage.data';
+import { useWindowSize } from '../../hooks/useWindowSize';
+import { useElementSize } from '../../hooks/useElementSize';
+import { Caption } from '../../components/Caption/Caption';
+import { DocsInfo } from '../../sections/DocsInfo/DocsInfo';
+import { Footer } from '../../components/Footer';
 
 const quickerPoint = 0.2;
 
@@ -92,6 +87,7 @@ export default function IndexPage() {
         </S.Wrapper>
       </S.ScrollContainer>
       {/* <h1>Helooo</h1> */}
+      {/* <Footer/> */}
     </>
   );
 }

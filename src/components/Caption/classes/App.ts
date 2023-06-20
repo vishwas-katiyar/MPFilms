@@ -2,10 +2,12 @@ import debounce from 'lodash.debounce';
 import FontFaceObserver from 'fontfaceobserver';
 import { MotionValue } from 'framer-motion';
 
-import { sharedValues } from 'utils/sharedValues';
-import { Bounds } from 'utils/sharedTypes';
+// import { sharedValues } from 'utils/sharedValues';
+// import { Bounds } from 'utils/sharedTypes';
 
 import { TextSketch } from './Components/TextSketch';
+import { sharedValues } from '../../../utils/sharedValues';
+import { Bounds } from '../../../utils/sharedTypes';
 
 interface Constructor {
   rendererEl: HTMLDivElement;

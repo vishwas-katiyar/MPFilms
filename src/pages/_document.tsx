@@ -1,8 +1,9 @@
 import NextDocument, { Head, Main, NextScript, DocumentContext, Html } from 'next/document';
 import React from 'react';
 import { ServerStyleSheet } from 'styled-components';
+import { VARIABLES, setCssVariables } from '../utils/functions/setCssVariables';
 
-import { VARIABLES, setCssVariables } from 'utils/functions/setCssVariables';
+// import { VARIABLES, setCssVariables } from 'utils/functions/setCssVariables';
 
 export default class Document extends NextDocument {
   static async getInitialProps(ctx: DocumentContext) {

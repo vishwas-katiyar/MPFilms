@@ -1,7 +1,9 @@
 import { css } from 'styled-components';
+import { media } from './media';
+import { sharedValues } from './sharedValues';
 
-import { media } from 'utils/media';
-import { sharedValues } from 'utils/sharedValues';
+// import { media } from 'utils/media';
+// import { sharedValues } from 'utils/sharedValues';
 
 export const s1 = css`
   font-size: 13px;
