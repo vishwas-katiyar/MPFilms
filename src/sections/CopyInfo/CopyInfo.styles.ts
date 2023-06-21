@@ -45,7 +45,7 @@ export const AuthorWrapper = styled.h1`
 export const LogoWrapper = styled.a`
   cursor: pointer;
   position: fixed;
-  z-index: 20;
+  z-index: 201;
   top: 16px;
   left: 20px;
   display: flex;

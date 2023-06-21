@@ -2,7 +2,7 @@ import React from 'react';
 
 const ProfileCard: React.FC = () => {
   return (
-    <div className="card_profile">
+    <div className="card_profile m-auto my-14">
   <div className="content_profile">
     <div className="back_profile">
       <div className="back-content_profile">

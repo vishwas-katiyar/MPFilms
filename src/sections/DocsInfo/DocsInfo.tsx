@@ -12,6 +12,7 @@ import ProfileCard from '../../components/Profile';
 import { Card } from '../../components/Cards';
 import { MovieCards } from '../../components/MovieCards';
 import { Footer } from '../../components/Footer';
+import MobileProfile from 'components/MobileProfile';
 // import Footer from '../../components/Footer';
 
 const cardTitle: string[] = [
@@ -64,13 +65,19 @@ export const DocsInfo = (props: Props) => {
           ))}
         </div>
         <ProfileCard />
-        <div className="grid grid-cols-1 gap-11 md:grid-cols-2 lg:grid-cols-3 justify-center">
+        <hr />
+        <div className="hidden md:grid gap-11 md:grid-cols-2 lg:grid-cols-3 justify-center mt-10">
           {cardTitle.map((title: string) => (
             <MovieCards title={title} subTitle="Lorem Ipsum" />
           ))}
         </div>
+        <div className="md:hidden justify-center mt-10">
+          {cardTitle.map((title: string) => (
+            <MobileProfile title={title} subTitle="Lorem Ipsum" />
+          ))}
+        </div>
       </S.Container>
-      <Footer/>
+      <Footer />
     </>
   );
 };

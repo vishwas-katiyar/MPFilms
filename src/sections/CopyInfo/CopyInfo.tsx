@@ -1,11 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 
-// import { PreloadImage } from 'components/PreloadImage/PreloadImage';
-// import { LinkHandler } from 'components/LinkHandler/LinkHandler';
-
 import * as S from './CopyInfo.styles';
-import logoSrc from './images/logo.svg';
+import logoSrc from './images/MP FILMS.svg';
 import { PreloadImage } from '../../components/PreloadImage/PreloadImage';
 import { LinkHandler } from '../../components/LinkHandler/LinkHandler';
 
@@ -24,9 +21,9 @@ export const CopyInfo = (props: Props) => {
         </LinkHandler>
       </S.GithubWrapper>
       <S.AuthorWrapper>
-        React Just Parallax - showcase by
-        <LinkHandler isExternal elHref="https://twitter.com/michalzalobny">
-          <S.AuthorLink>@michalzalobny</S.AuthorLink>
+        showcase by
+        <LinkHandler isExternal elHref="https://www.linkedin.com/in/vishwaskatiyar/">
+          <S.AuthorLink>@VishwasKatiyar</S.AuthorLink>
         </LinkHandler>
       </S.AuthorWrapper>
       <Link href="/" passHref>

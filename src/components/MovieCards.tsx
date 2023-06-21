@@ -37,9 +37,9 @@ export const MovieCards: React.FC<CardProps> = ({ title, subTitle }) => {
     <div id="card_c">
     <p id="prompt">{title}</p>
       <div className="title_c">{subTitle}</div>
-      <div className="subtitle_c">
+      {/* <div className="subtitle_c">
         mouse hover tracker
-      </div>
+      </div> */}
       
     </div>
   </div>

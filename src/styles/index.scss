@@ -673,13 +673,38 @@ $background-color_6: #ff2233;
 }
 
 
-.footer_box {
-	transition: box-shadow .3s;
-	margin: 50px;
+$background-color_1: #e1e1e1;
+
+.cardMobile {
+	width: 300px;
+	height: 200px;
+	background-image: url("https://picsum.photos/200/300");
 	border-radius: 10px;
-	border: 1px solid #ccc;
-	margin: 0px -20rem ;
+	overflow: hidden;
+	cursor: pointer;
+	transition: all 0.5s ease;
+
 	&:hover {
-		box-shadow: 0 0 11px white;
+		transform: scale(1.2);
+		margin: 3rem auto;
+	}
+
+	h2 {
+		margin-top: 0;
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+}
+
+.cardMobile-content {
+	padding: 20px;
+	transition: all 0.5s ease;
+}
+
+.cardMobile.grow {
+	.cardMobile-content {
+		height: 100%;
 	}
 }
