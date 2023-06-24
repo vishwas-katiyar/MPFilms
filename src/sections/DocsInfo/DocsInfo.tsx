@@ -13,6 +13,8 @@ import { Card } from '../../components/Cards';
 import { MovieCards } from '../../components/MovieCards';
 import { Footer } from '../../components/Footer';
 import MobileProfile from 'components/MobileProfile';
+import { ClientsLogo } from 'components/ClientsLogo';
+import { FeatureList } from 'components/FeatureList';
 // import Footer from '../../components/Footer';
 
 const cardTitle: string[] = [
@@ -77,6 +79,11 @@ export const DocsInfo = (props: Props) => {
           ))}
         </div>
       </S.Container>
+      <hr />
+      <FeatureList />
+      <hr />
+      <ClientsLogo />
+      <hr />
       <Footer />
     </>
   );
