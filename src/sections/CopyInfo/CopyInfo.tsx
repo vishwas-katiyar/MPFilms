@@ -16,8 +16,8 @@ export const CopyInfo = (props: Props) => {
   return (
     <>
       <S.GithubWrapper>
-        <LinkHandler isExternal elHref={repoHref}>
-          <S.GithubLink>Official NPM page</S.GithubLink>
+        <LinkHandler isExternal elHref="https://www.linkedin.com/in/vishwaskatiyar/">
+          <S.GithubLink>Developer Github</S.GithubLink>
         </LinkHandler>
       </S.GithubWrapper>
       <S.AuthorWrapper>

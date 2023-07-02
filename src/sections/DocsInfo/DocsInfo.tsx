@@ -1,13 +1,6 @@
-import React from 'react';
-import { MouseParallax, ScrollParallax } from 'react-just-parallax';
-
-import { LinkHandler } from '../../components/LinkHandler/LinkHandler';
-// import { CodeRenderer } from 'components/CodeRenderer/CodeRenderer';
-// import "../../components/cards.css"
+import React, { useRef } from 'react';
 import * as S from './DocsInfo.styles';
-// import { Card } from 'components/Cards';
-// import ProfileCard from 'components/Profile';
-import { CodeRenderer } from '../../components/CodeRenderer/CodeRenderer';
+// import ScrollAnimation from 'react-animate-on-scroll';
 import ProfileCard from '../../components/Profile';
 import { Card } from '../../components/Cards';
 import { MovieCards } from '../../components/MovieCards';
@@ -15,7 +8,10 @@ import { Footer } from '../../components/Footer';
 import MobileProfile from 'components/MobileProfile';
 import { ClientsLogo } from 'components/ClientsLogo';
 import { FeatureList } from 'components/FeatureList';
+import { ScrollParallax, ScrollParallaxHandle } from 'react-just-parallax';
+// import ScrollEffect from 'react-scroll-effects';
 // import Footer from '../../components/Footer';
+// import e from '../CopyInfo/images/MP FILMS.png';
 
 const cardTitle: string[] = [
   'Feature Films',
@@ -31,6 +27,20 @@ const cardTitle: string[] = [
   'Short films',
   'Film Events',
 ];
+
+const projectList: { name: string; url: string }[] = [
+  { name: 'Ek Duje Ke Vaste - 2', url: 'https://i.ibb.co/YWs1sn4/ekdujekwaste.webp' },
+  { name: 'KBC - Kaun Banega Crorepati', url: 'https://i.ibb.co/s3763pw/kbc.jpg' },
+  { name: 'Life Navrangi', url: 'https://i.ibb.co/pLJd29z/lifenavrangi.jpg' },
+  { name: 'The Big Picture', url: 'https://i.ibb.co/G3KGrWP/thebigpicture.png' },
+  { name: 'Saajish - The Conspiracy', url: 'https://i.ibb.co/3rx37BB/saajish.jpg' },
+  { name: 'Online 24x7', url: 'https://i.ibb.co/Tqt3yPc/Online-24x7-Web-Series-1.jpg' },
+  {
+    name: 'Kokilaben Dhirubhai Ambani Hospital',
+    url: 'https://i.ibb.co/p10wnNB/kokilaben.jpg',
+  },
+];
+
 interface Props {
   scrollContainerRef: React.MutableRefObject<HTMLDivElement | null>;
 }
@@ -55,6 +65,7 @@ const mouseText = `import { MouseParallax } from 'react-just-parallax';
 
 export const DocsInfo = (props: Props) => {
   const { scrollContainerRef } = props;
+  const scrollParallaxRef = useRef<ScrollParallaxHandle | null>(null);
 
   return (
     <>
@@ -68,19 +79,27 @@ export const DocsInfo = (props: Props) => {
         </div>
         <ProfileCard />
         <hr />
-        <div className="hidden md:grid gap-11 md:grid-cols-2 lg:grid-cols-3 justify-center mt-10">
-          {cardTitle.map((title: string) => (
-            <MovieCards title={title} subTitle="Lorem Ipsum" />
-          ))}
-        </div>
-        <div className="md:hidden justify-center mt-10">
-          {cardTitle.map((title: string) => (
-            <MobileProfile title={title} subTitle="Lorem Ipsum" />
-          ))}
+        <div className="animate__animated animate__bounce">
+          <div className="hidden md:grid gap-11 md:grid-cols-2 lg:grid-cols-3 justify-center mt-10">
+            {projectList.map(({ name, url }) => (
+              <MovieCards title={name} subTitle={name} url={url} />
+            ))}
+          </div>
+          <div className="md:hidden justify-center mt-10">
+            {projectList.map(({ name, url }) => (
+              <MobileProfile title={name} subTitle={name} url={url} />
+            ))}
+          </div>
         </div>
       </S.Container>
       <hr />
-      <FeatureList />
+      <div className="wrapper">
+        <ScrollParallax ref={scrollParallaxRef}>
+          <h1>heelo</h1>
+          <FeatureList />
+        </ScrollParallax>
+      </div>
+
       <hr />
       <ClientsLogo />
       <hr />
