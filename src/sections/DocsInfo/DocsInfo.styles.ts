@@ -11,7 +11,7 @@ export const Container = styled.div`
   // background: white;
   border-radius: 10px;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.12);
-  margin-bottom: 10rem;
+  // margin-bottom: 10rem;
   padding: 2.5rem;
 
   ${media.tablet} {

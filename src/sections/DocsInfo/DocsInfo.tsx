@@ -9,6 +9,7 @@ import MobileProfile from 'components/MobileProfile';
 import { ClientsLogo } from 'components/ClientsLogo';
 import { FeatureList } from 'components/FeatureList';
 import { ScrollParallax, ScrollParallaxHandle } from 'react-just-parallax';
+import { LinkHandler } from 'components/LinkHandler/LinkHandler';
 // import ScrollEffect from 'react-scroll-effects';
 // import Footer from '../../components/Footer';
 // import e from '../CopyInfo/images/MP FILMS.png';
@@ -92,10 +93,16 @@ export const DocsInfo = (props: Props) => {
           </div>
         </div>
       </S.Container>
+
+      <button
+        onClick={() => (location.href = '/examples/1')}
+        className="w-full h-auto mb-4 text-[x-large] bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+      >
+        Show More
+      </button>
       <hr />
       <div className="wrapper">
         <ScrollParallax ref={scrollParallaxRef}>
-          <h1>heelo</h1>
           <FeatureList />
         </ScrollParallax>
       </div>

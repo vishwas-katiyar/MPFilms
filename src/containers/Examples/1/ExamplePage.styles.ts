@@ -16,7 +16,7 @@ export const ScrollContainer = styled.div`
   height: 100%;
   overflow: auto;
   overflow-x: hidden;
-  background: white;
+  background: black;
 `;
 
 export const Wrapper = styled(motion.div)`

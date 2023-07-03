@@ -35,14 +35,14 @@ export const Head = (props: HeadProps) => {
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
       />
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEBSK9H43F"></script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-17NDE99V73"></script>
       <script>
         {`
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'G-MEBSK9H43F');
+      gtag('config', 'G-17NDE99V73');
       `}
       </script>
       {/* <GoogleAnalytics /> */}
