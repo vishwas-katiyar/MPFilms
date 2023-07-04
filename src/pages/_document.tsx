@@ -67,6 +67,15 @@ export default class Document extends NextDocument {
               __html: `(${setCssVariables.toString()})({variables:${JSON.stringify(VARIABLES)}})`,
             }}
           />
+          <script>
+            {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-17NDE99V73');
+      `}
+          </script>
         </Head>
         <body>
           <Main />
