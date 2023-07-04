@@ -1,8 +1,9 @@
 import NextDocument, { Head, Main, NextScript, DocumentContext, Html } from 'next/document';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ServerStyleSheet } from 'styled-components';
 import { VARIABLES, setCssVariables } from '../utils/functions/setCssVariables';
-
+import TagManager from 'react-gtm-module';
+// import GoogleTagManager from 'react-gtm-module';
 // import { VARIABLES, setCssVariables } from 'utils/functions/setCssVariables';
 
 export default class Document extends NextDocument {
@@ -10,6 +11,7 @@ export default class Document extends NextDocument {
     const sheet = new ServerStyleSheet();
     const originalRenderPage = ctx.renderPage;
 
+    // TagManager.initialize(tagManagerArgs);
     try {
       ctx.renderPage = () =>
         originalRenderPage({
@@ -62,21 +64,21 @@ export default class Document extends NextDocument {
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta name="theme-color" content="#000000"></meta>
           <script src="https://cdn.tailwindcss.com"></script>
+
           <script
             dangerouslySetInnerHTML={{
               __html: `(${setCssVariables.toString()})({variables:${JSON.stringify(VARIABLES)}})`,
             }}
           />
-          <script>
-            {`
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-17NDE99V73');
-      `}
-          </script>
         </Head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-17NDE99V73"></script>
+        <script>
+          {`window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-17NDE99V73');`}
+        </script>
         <body>
           <Main />
           <NextScript />

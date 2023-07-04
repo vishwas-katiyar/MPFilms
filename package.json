@@ -3,7 +3,6 @@
   "version": "1.0.2",
   "private": true,
   "homepage": "https://github.com/vishwas-katiyar/MPFilms.git",
-  
   "scripts": {
     "dev": "next dev",
     "deploy": "next build && next export && git add out/ && git commit -m \"Deploy gh-pages\" && git subtree push --prefix out origin gh-pages",
@@ -13,6 +12,7 @@
   },
   "dependencies": {
     "@material-tailwind/react": "^2.0.1",
+    "@types/react-gtm-module": "^2.0.1",
     "focus-visible": "5.2.0",
     "fontfaceobserver": "2.1.0",
     "framer-motion": "6.5.1",
@@ -23,6 +23,7 @@
     "next-optimized-images": "^2.6.2",
     "react": "18.0.0",
     "react-dom": "18.0.0",
+    "react-gtm-module": "^2.0.11",
     "react-just-parallax": "^3.1.14",
     "react-syntax-highlighter": "^15.5.0",
     "split-type": "0.2.5",
