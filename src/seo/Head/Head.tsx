@@ -9,7 +9,7 @@ export interface HeadProps {
   ogImage?: string;
 }
 
-export const Head = (props: HeadProps) => {
+export const SEOHead = (props: HeadProps) => {
   const {
     ogImage = '../../sections/CopyInfo/images/MP FILMS.png',
     title = 'MP Films | Line Production in Madhya Pradesh',
@@ -20,7 +20,11 @@ export const Head = (props: HeadProps) => {
     <NextHead>
       <title>{title}</title>
       <meta name="description" content={description} />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
       <link rel="icon" href="../../sections/CopyInfo/images/MP FILMS ICO.ico" />
+
+      <meta property="og:url" content="https://mpfilms.co.in/" />
 
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
@@ -34,17 +38,8 @@ export const Head = (props: HeadProps) => {
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
       />
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-17NDE99V73"></script>
-      <script>
-        {`
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      {/* Vishasssssss */}
 
-      gtag('config', 'G-17NDE99V73');
-      `}
-      </script>
       {/* <GoogleAnalytics /> */}
     </NextHead>
   );
