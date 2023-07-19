@@ -37,6 +37,15 @@ export default class Document extends NextDocument {
       <Html>
         <head>
           <title>MP Films | Line Production in Madhya Pradesh</title>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KTH29NK8');`,
+            }}
+          />
           <meta
             name="description"
             content={
@@ -44,12 +53,7 @@ export default class Document extends NextDocument {
             }
           />
           <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-          {/* <link
-            rel="icon"
-            href="../sections/CopyInfo/images/ICON-_1_.ico"
-            sizes="any"
-            type="image/x-icon"
-          /> */}
+
           <meta property="og:url" content="https://mpfilms.co.in/" />
           <meta property="og:type" content="website" />
           <meta property="og:title" content={'MP Films | Line Production in Madhya Pradesh'} />
@@ -99,8 +103,6 @@ export default class Document extends NextDocument {
               __html: `(${setCssVariables.toString()})({variables:${JSON.stringify(VARIABLES)}})`,
             }}
           />
-          {/* <SEOHead /> */}
-          {/* Vishasssssss */}
         </Head>
 
         <script async src={gtag} />
@@ -118,6 +120,14 @@ export default class Document extends NextDocument {
           }}
         />
         <body>
+          <noscript>
+            <iframe
+              src="https://www.googletagmanager.com/ns.html?id=GTM-KTH29NK8"
+              height="0"
+              width="0"
+              style={{ display: 'none', visibility: 'hidden' }}
+            ></iframe>
+          </noscript>
           <Main />
           <NextScript />
         </body>
