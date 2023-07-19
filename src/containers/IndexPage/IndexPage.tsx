@@ -1,17 +1,11 @@
 import React, { useRef } from 'react';
 import { useSpring, useTransform, useScroll } from 'framer-motion';
 
-// import { useElementSize } from 'hooks/useElementSize';
-// import { DocsInfo } from 'sections/DocsInfo/DocsInfo';
-// import { Caption } from 'components/Caption/Caption';
-// import { useWindowSize } from 'hooks/useWindowSize';
-
 import * as S from './IndexPage.styles';
 import { useWindowSize } from '../../hooks/useWindowSize';
 import { useElementSize } from '../../hooks/useElementSize';
 import { Caption } from '../../components/Caption/Caption';
 import { DocsInfo } from '../../sections/DocsInfo/DocsInfo';
-import { Footer } from '../../components/Footer';
 
 const quickerPoint = 0.2;
 

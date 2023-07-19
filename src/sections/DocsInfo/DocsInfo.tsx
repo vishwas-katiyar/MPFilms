@@ -74,21 +74,21 @@ export const DocsInfo = (props: Props) => {
         <S.Title>We offer Line Production Services for all projects.</S.Title>
 
         <div className="cards flex flex-wrap justify-center mt-20">
-          {cardTitle.map((title: string) => (
-            <Card color="red" tipText={title} secondText="Lorem Ipsum" />
+          {cardTitle.map((title: string, index) => (
+            <Card color="red" key={index} tipText={title} secondText="Lorem Ipsum" />
           ))}
         </div>
         <ProfileCard />
         <hr />
         <div className="animate__animated animate__bounce">
           <div className="hidden md:grid gap-11 md:grid-cols-2 lg:grid-cols-3 justify-center mt-10">
-            {projectList.map(({ name, url }) => (
-              <MovieCards title={name} subTitle={name} url={url} />
+            {projectList.map(({ name, url }, index) => (
+              <MovieCards title={name} key={index} subTitle={name} url={url} />
             ))}
           </div>
           <div className="md:hidden justify-center mt-10">
-            {projectList.map(({ name, url }) => (
-              <MobileProfile title={name} subTitle={name} url={url} />
+            {projectList.map(({ name, url }, index) => (
+              <MobileProfile title={name} key={index} subTitle={name} url={url} />
             ))}
           </div>
         </div>

@@ -10,11 +10,28 @@ import { Layout } from '../components/Layout/Layout';
 import { PageProps } from '../utils/sharedTypes';
 import { ThemeProvider } from '@material-tailwind/react';
 
+declare global {
+  interface Window {
+    // ⚠️ notice that "Window" is capitalized here
+    gtag: (s, s1, s2) => void;
+  }
+}
 export default function MyApp({ Component, pageProps }: { Component: any; pageProps: any }) {
   const router = useRouter();
   const canvasAppRef = useRef<HTMLDivElement | null>(null);
   const [isReady, setIsReady] = useState(false);
 
+  useEffect(() => {
+    const handleRouteChange = url => {
+      window.gtag('config', 'G-17NDE99V73' as string, {
+        page_path: url,
+      });
+    };
+    router.events.on('routeChangeComplete', handleRouteChange);
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange);
+    };
+  }, [router.events]);
   useEffect(() => {
     const fontA = new FontFaceObserver('opensans');
     const fontB = new FontFaceObserver('teko');
