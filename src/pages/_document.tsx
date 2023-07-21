@@ -36,7 +36,7 @@ export default class Document extends NextDocument {
     return (
       <Html>
         <head>
-          <meta charSet="UTF-8" />
+          {/* <meta charSet="UTF-8" /> */}
           <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
           <title>MP Films | Line Production in Madhya Pradesh</title>
           <script
@@ -80,8 +80,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             }
           />
           <meta name="twitter:image" content="../../public/ICON-_1_.png" />
-
-          <link rel="icon" type="image/png" href="../../public/favicon.ico" />
         </head>
         <Head>
           <link
