@@ -106,7 +106,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </Head>
 
         <script async src={gtag} />
-        {/* {/ Inject the GA tracking code with the Measurement ID /} */}
         <script
           dangerouslySetInnerHTML={{
             __html: `
