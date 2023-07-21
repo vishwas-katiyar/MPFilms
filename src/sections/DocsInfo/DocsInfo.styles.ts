@@ -12,11 +12,11 @@ export const Container = styled.div`
   border-radius: 10px;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.12);
   // margin-bottom: 10rem;
-  padding: 2.5rem;
+  // padding: 2.5rem;
 
-  ${media.tablet} {
-    padding: 7rem;
-  }
+  // ${media.tablet} {
+    // padding: 7rem;
+  // }
 `;
 
 export const Title = styled.h2`

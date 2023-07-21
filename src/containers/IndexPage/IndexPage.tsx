@@ -6,6 +6,7 @@ import { useWindowSize } from '../../hooks/useWindowSize';
 import { useElementSize } from '../../hooks/useElementSize';
 import { Caption } from '../../components/Caption/Caption';
 import { DocsInfo } from '../../sections/DocsInfo/DocsInfo';
+import { LinkHandler } from 'components/LinkHandler/LinkHandler';
 
 const quickerPoint = 0.2;
 
@@ -66,12 +67,12 @@ export default function IndexPage() {
             scrollRatio={scrollRatio}
           />
         </S.CaptionWrapper>
-        {/* 
+
         <S.GithubWrapper>
-        <LinkHandler elHref="/examples/1">
-        <S.GithubLink>Demo 1</S.GithubLink>
-        </LinkHandler>
-      </S.GithubWrapper> */}
+          <LinkHandler elHref="/aboutus">
+            <S.GithubLink>About Us</S.GithubLink>
+          </LinkHandler>
+        </S.GithubWrapper>
 
         <S.Wrapper>
           <S.DocsWrapper>

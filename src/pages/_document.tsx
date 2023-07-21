@@ -36,6 +36,8 @@ export default class Document extends NextDocument {
     return (
       <Html>
         <head>
+          <meta charSet="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <title>MP Films | Line Production in Madhya Pradesh</title>
           <script
             dangerouslySetInnerHTML={{
@@ -47,12 +49,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             }}
           />
           <meta
+            name="keywords"
+            content="line production, Madhya Pradesh, film production, video production, production services"
+          />
+          <meta name="robots" content="index, follow" />
+
+          <meta
             name="description"
             content={
               'MP Films Line Production is a trusted and reliable line production company based in Madhya Pradesh. With years of experience in the film industry, we specialize in providing comprehensive production services to local and international clients. Our dedicated team of professionals is committed to delivering exceptional results, ensuring a seamless production process from start to finish.'
             }
           />
-          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
           <meta property="og:url" content="https://mpfilms.co.in/" />
           <meta property="og:type" content="website" />
@@ -72,6 +79,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               'MP Films Line Production is a trusted and reliable line production company based in Madhya Pradesh. With years of experience in the film industry, we specialize in providing comprehensive production services to local and international clients. Our dedicated team of professionals is committed to delivering exceptional results, ensuring a seamless production process from start to finish.'
             }
           />
+          <meta name="twitter:image" content="../../public/ICON-_1_.png" />
+
+          <link rel="icon" type="image/png" href="../../public/favicon.ico" />
         </head>
         <Head>
           <link
