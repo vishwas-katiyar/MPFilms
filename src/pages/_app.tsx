@@ -54,8 +54,8 @@ export default function MyApp({ Component, pageProps }: { Component: any; pagePr
 
   return (
     <>
+      {/* <GlobalStyles /> */}
       <ThemeProvider>
-        {/* <GlobalStyles /> */}
         <Layout repoHref={(pageProps as PageProps).repoHref} isReady={isReady}>
           <div>
             <div ref={canvasAppRef} className="canvas__wrapper" />

@@ -114,11 +114,11 @@ hello(window, document, 'script', 'dataLayer', 'GTM-KTH29NK8');`,
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta name="theme-color" content="#000000"></meta>
           <script src="https://cdn.tailwindcss.com/3.3.0"></script>
-          <script
+          {/* <script
             dangerouslySetInnerHTML={{
               __html: `(${setCssVariables.toString()})({variables:${JSON.stringify(VARIABLES)}})`,
             }}
-          />
+          /> */}
         </Head>
 
         <script async src={gtag} />
