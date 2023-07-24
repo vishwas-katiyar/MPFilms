@@ -56,16 +56,16 @@ export default class Document extends NextDocument {
 hello(window, document, 'script', 'dataLayer', 'GTM-KTH29NK8');`,
             }}
           />
-          <meta
+          {/* <meta
             name="keywords"
             content="line production, Madhya Pradesh, film production, video production, production services Line production in bhopal , Line production in Madhya Pradesh ,Line production , Production in bhopal , Production in Madhya Pradesh , Best Line production in bhopal, Best line production in Madhya Pradesh , Shooting in bhopal , Shooting in madhya pradesh , Location in madhya pradesh"
-          />
+          /> */}
           <meta name="robots" content="index, follow" />
 
           <meta
             name="description"
             content={
-              'MP Films Line Production is a trusted and reliable line production company based in Madhya Pradesh. With years of experience in the film industry, we specialize in providing comprehensive production services to local and international clients. Our dedicated team of professionals is committed to delivering exceptional results, ensuring a seamless production process from start to finish.'
+              'MP Films Line Production is a trusted and reliable line production company based in Madhya Pradesh. With years of experience in the film industry, we specialize in providing comprehensive production services to local and international clients. Our dedicated team of professionals is committed to delivering exceptional results, ensuring a seamless production process from start to finish. line production, Madhya Pradesh, film production, video production, production services Line production in bhopal , Line production in Madhya Pradesh ,Line production , Production in bhopal , Production in Madhya Pradesh , Best Line production in bhopal, Best line production in Madhya Pradesh , Shooting in bhopal , Shooting in madhya pradesh , Location in madhya pradesh'
             }
           />
 
@@ -75,7 +75,7 @@ hello(window, document, 'script', 'dataLayer', 'GTM-KTH29NK8');`,
           <meta
             property="og:description"
             content={
-              'MP Films Line Production is a trusted and reliable line production company based in Madhya Pradesh. With years of experience in the film industry, we specialize in providing comprehensive production services to local and international clients. Our dedicated team of professionals is committed to delivering exceptional results, ensuring a seamless production process from start to finish.'
+              'MP Films Line Production is a trusted and reliable line production company based in Madhya Pradesh. With years of experience in the film industry, we specialize in providing comprehensive production services to local and international clients. Our dedicated team of professionals is committed to delivering exceptional results, ensuring a seamless production process from start to finish. line production, Madhya Pradesh, film production, video production, production services Line production in bhopal , Line production in Madhya Pradesh ,Line production , Production in bhopal , Production in Madhya Pradesh , Best Line production in bhopal, Best line production in Madhya Pradesh , Shooting in bhopal , Shooting in madhya pradesh , Location in madhya pradesh'
             }
           />
           <meta property="og:image" content={'../sections/CopyInfo/images/MP FILMS.png'} />
@@ -84,7 +84,7 @@ hello(window, document, 'script', 'dataLayer', 'GTM-KTH29NK8');`,
           <meta
             name="twitter:description"
             content={
-              'MP Films Line Production is a trusted and reliable line production company based in Madhya Pradesh. With years of experience in the film industry, we specialize in providing comprehensive production services to local and international clients. Our dedicated team of professionals is committed to delivering exceptional results, ensuring a seamless production process from start to finish.'
+              'MP Films Line Production is a trusted and reliable line production company based in Madhya Pradesh. With years of experience in the film industry, we specialize in providing comprehensive production services to local and international clients. Our dedicated team of professionals is committed to delivering exceptional results, ensuring a seamless production process from start to finish. line production, Madhya Pradesh, film production, video production, production services Line production in bhopal , Line production in Madhya Pradesh ,Line production , Production in bhopal , Production in Madhya Pradesh , Best Line production in bhopal, Best line production in Madhya Pradesh , Shooting in bhopal , Shooting in madhya pradesh , Location in madhya pradesh'
             }
           />
           <meta name="twitter:image" content="../../public/ICON-_1_.png" />
