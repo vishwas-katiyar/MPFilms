@@ -54,7 +54,7 @@ export default function MyApp({ Component, pageProps }: { Component: any; pagePr
 
   return (
     <>
-      <GlobalStyles />
+      {/* <GlobalStyles /> */}
       <ThemeProvider>
         <Layout repoHref={(pageProps as PageProps).repoHref} isReady={isReady}>
           <div>
