@@ -360,7 +360,7 @@ export default function aboutus() {
             </div>
           </section>
         </div>
-        <ReCAPTCHAForm />
+        {/* <ReCAPTCHAForm /> */}
       </S.ScrollContainer>
     </>
   );
