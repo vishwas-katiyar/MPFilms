@@ -34,7 +34,7 @@ export default class Document extends NextDocument {
 
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <head>
           <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
           <title>MP Films | Line Production in Madhya Pradesh</title>
@@ -65,7 +65,7 @@ hello(window, document, 'script', 'dataLayer', 'GTM-KTH29NK8');`,
           <meta
             name="description"
             content={
-              'MP Films Line Production is a trusted and reliable line production company based in Madhya Pradesh. With years of experience in the film industry, we specialize in providing comprehensive production services to local and international clients. Our dedicated team of professionals is committed to delivering exceptional results, ensuring a seamless production process from start to finish. line production, Madhya Pradesh, film production, video production, production services Line production in bhopal , Line production in Madhya Pradesh ,Line production , Production in bhopal , Production in Madhya Pradesh , Best Line production in bhopal, Best line production in Madhya Pradesh , Shooting in bhopal , Shooting in madhya pradesh , Location in madhya pradesh'
+              'MP Films Line Production - Trusted line production company in Madhya Pradesh with comprehensive services for local and international clients.'
             }
           />
 
@@ -88,6 +88,7 @@ hello(window, document, 'script', 'dataLayer', 'GTM-KTH29NK8');`,
             }
           />
           <meta name="twitter:image" content="../../public/ICON-_1_.png" />
+          <link rel="canonical" href="https://mpfilms.co.in/" />
         </head>
         <Head>
           <link
@@ -113,7 +114,7 @@ hello(window, document, 'script', 'dataLayer', 'GTM-KTH29NK8');`,
           />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta name="theme-color" content="#000000"></meta>
-          <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+          {/* <script src="https://cdn.tailwindcss.com/3.3.0"></script> */}
           {/* <script
             dangerouslySetInnerHTML={{
               __html: `(${setCssVariables.toString()})({variables:${JSON.stringify(VARIABLES)}})`,

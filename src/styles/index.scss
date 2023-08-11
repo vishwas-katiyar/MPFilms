@@ -5,6 +5,12 @@
 @import './components/measure.scss';
 @import './components/canvas.scss';
 
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+// Your custom SCSS code goes here
+// ...
 $background-color_1: #1a1a1a;
 
 .card {

@@ -25,9 +25,8 @@ export const FeatureList = () => {
             </div>
             <h2 className="mb-4 font-bold text-5xl">Support 24/7</h2>
             <p className="text-neutral-500 font-medium dark:text-neutral-300">
-              Laudantium totam quas cumque pariatur at doloremque hic quos quia eius. Reiciendis
-              optio minus mollitia rerum labore facilis inventore voluptatem ad, quae quia sint.
-              Ullam.
+              Explore video creation in Madhya Pradesh with unwavering 24/7 support. Get assistance
+              anytime, anywhere, to fuel your creative journey.
             </p>
           </div>
 
@@ -50,8 +49,8 @@ export const FeatureList = () => {
             </div>
             <h2 className="mb-4 font-bold text-5xl">Safe and solid</h2>
             <p className="text-neutral-500 font-medium dark:text-neutral-300">
-              Eum nostrum fugit numquam, voluptates veniam neque quibusdam ullam aspernatur odio
-              soluta, quisquam dolore animi mollitia a omnis praesentium, expedita nobis!
+              Craft your films in a secure haven. Our platform ensures your content's safety,
+              letting you focus on storytelling without worries.
             </p>
           </div>
 
@@ -98,9 +97,8 @@ export const FeatureList = () => {
             </div>
             <h2 className="mb-4 font-bold text-5xl">Support 24/7</h2>
             <p className="text-neutral-500 font-medium dark:text-neutral-300">
-              Laudantium totam quas cumque pariatur at doloremque hic quos quia eius. Reiciendis
-              optio minus mollitia rerum labore facilis inventore voluptatem ad, quae quia sint.
-              Ullam.
+              Explore video creation in Madhya Pradesh with unwavering 24/7 support. Get assistance
+              anytime, anywhere, to fuel your creative journey.
             </p>
           </div>
 
@@ -123,8 +121,8 @@ export const FeatureList = () => {
             </div>
             <h2 className="mb-4 font-bold text-5xl">Safe and solid</h2>
             <p className="text-neutral-500 font-medium dark:text-neutral-300">
-              Eum nostrum fugit numquam, voluptates veniam neque quibusdam ullam aspernatur odio
-              soluta, quisquam dolore animi mollitia a omnis praesentium, expedita nobis!
+              Craft your films in a secure haven. Our platform ensures your content's safety,
+              letting you focus on storytelling without worries.
             </p>
           </div>
 
@@ -170,9 +168,8 @@ export const FeatureList = () => {
             </div>
             <h2 className="mb-4 font-bold text-5xl">Support 24/7</h2>
             <p className="text-neutral-500 font-medium dark:text-neutral-300">
-              Laudantium totam quas cumque pariatur at doloremque hic quos quia eius. Reiciendis
-              optio minus mollitia rerum labore facilis inventore voluptatem ad, quae quia sint.
-              Ullam.
+              Explore video creation in Madhya Pradesh with unwavering 24/7 support. Get assistance
+              anytime, anywhere, to fuel your creative journey.
             </p>
           </div>
 
@@ -195,8 +192,8 @@ export const FeatureList = () => {
             </div>
             <h2 className="mb-4 font-bold text-5xl">Safe and solid</h2>
             <p className="text-neutral-500 font-medium dark:text-neutral-300">
-              Eum nostrum fugit numquam, voluptates veniam neque quibusdam ullam aspernatur odio
-              soluta, quisquam dolore animi mollitia a omnis praesentium, expedita nobis!
+              Craft your films in a secure haven. Our platform ensures your content's safety,
+              letting you focus on storytelling without worries.
             </p>
           </div>
 
