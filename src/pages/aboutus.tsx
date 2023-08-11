@@ -3,6 +3,7 @@ import React, { useRef, useState } from 'react';
 import { MouseParallax, ScrollParallax } from 'react-just-parallax';
 import JustParallax from 'react-just-parallax';
 import * as S from '../containers/Examples/1/ExamplePage.styles';
+import { ReCAPTCHAForm } from 'components/GoogleCaptcha';
 
 export default function aboutus() {
   const scrollContainerRef = useRef<null | HTMLDivElement>(null);
@@ -359,6 +360,7 @@ export default function aboutus() {
             </div>
           </section>
         </div>
+        <ReCAPTCHAForm />
       </S.ScrollContainer>
     </>
   );
